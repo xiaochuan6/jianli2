@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人简历</title>
+	<style>
+	body,ul,p,img,section{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: '微软雅黑';
+		background: url('images/bodybg.jpg') center no-repeat;
+    background-attachment: fixed;
+	}
+	#main {
+		width: 960px;
+		height: 1100px;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		background: #EEEEEE;
+		opacity: .8;
+		box-shadow: 0 2px 10px #333;
+	}
+		#main #header {
+      position: relative;
+			width: 900px;
+			height: 120px;
+			margin-top: 50px;
+			margin: 0 auto;
+			background: #242415;
+		}
+		#main #header h1 {
+      background: url('images/hbg.gif');
+      position: absolute;
+      left: 350px;
+      top: 20px;
+			margin: 0 auto;
+			color: #fff;
+			width: 200px;
+			height: 80px;
+			line-height: 80px;
+			font-size: 30px;
+			text-align: center;
+		}
+				#main #content {
+					width: 900px;
+					margin: 0 auto;
+				}
+				#main #content #left{
+					height: 906px;
+					padding-right: 10px;
+					border-right: 3px solid #222;
+					float: left;
+				}
+				#left {
+					float: left;
+				}
+		  #box {
+		    position: relative;
+		    margin: 20px auto;
+		    width: 200px;
+		    height: 200px;
+		    border: 3px solid #222;
+		    border-right: none;
+		    cursor: pointer;
+		  }
+		  #box #img, #box #txt {
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 180px;
+		    height: 180px;
+		    border-radius: 50%;
+		    overflow: hidden;
+		  }
+		  #box #img img {
+		    width: 180px;
+		    height: 180px;
+		  }
+		  #box #img {
+		  	margin: 10px;
+		    background: #fff;
+		    box-shadow: inset 0 0 25px rgba(0, 0, 0, .5);
+		    opacity: 1;
+		  }
+		  #box:hover #img {
+		    transition: .5s;
+		    opacity: 0;
+		  }
+		  #box #txt {
+		  	margin: 10px;
+		    font-size: 16px;
+		    background: rgba(0, 0, 0, .8);
+		    color: #fff;
+		    text-align: center;
+		    padding-top: 65px;
+		    box-sizing: border-box;
+		    line-height: 2;
+		    opacity: 0;
+		  }
+		  #box:hover #txt {
+		    transition: .5s;
+		    opacity: 1;
+		  }
+		  #box:hover #img {
+		    opacity: 0;
+		  }
+		  #box:hover #txt {
+		    transform: rotateY(1turn);
+		  }
+		  #right {
+		  	margin-top: 20px;
+		  	width: 670px;
+		  	float: left;
+		  }
+		  #box ,#jiaoyu, #jineng,#ziwo {
+		  	width: 200px;
+		    margin-bottom: 10px;
+		    border: 3px solid #222;
+		    border-right: none;
+		  	font-size: 25px;
+		  	font-weight: bold;
+		  	text-align: center;
+		  }
+		  #jieshao,#beijing,#zhangwo,#pingjia {
+		  	width: 670px;
+				height: 200px;
+				margin-left: 10px;
+		    margin-bottom: 10px;
+		    float: left;
+				border:  3px solid #222;
+				border-left:none;
+		  }
+		  #jieshao {
+				height: 200px;
+		  }
+		  #jieshao p{
+		  	width: 180px;
+		  	float: left;
+		  	padding-left: 40px;
+		  	padding-top: 28px;
+		  }
+		  #jieshao #wx {
+		  	width: 220px;
+		  }
+		  #jieshao img{
+				width: 20px;
+				height: 20px;
+		  }
+		  #jieshao img,p{
+				vertical-align: middle;
+		  }
+		  #jiaoyu {
+		  	height: 200px;
+		  	line-height: 200px;
+		  }
+		  #beijing #f1{
+		  	margin-top: 10px;
+		  	margin-left: 40px;
+		  	font-weight: bold;
+		  	line-height: 1.5;
+		  }
+		  #beijing #f2{
+		  	margin-top: 20px;
+		  	margin-left: 40px;
+		  	font-weight: bold;
+		  	line-height: 2;
+		  }
+		  #jineng {
+		  	height: 200px;
+		  }
+		  #ziwo {
+		  	height: 150px;
+		  	line-height: 150px;
+		  }
+		  #pingjia {
+  	 	height: 150px;
+  	  text-indent: 2em;
+  	  line-height: 2;
+  	  font-weight: bold;
+		  }
+		  #pingjia #nr {
+		  	margin-left: 20px;
+		  	width: 620px;
+		  	margin-top: 20px;
+		  }
+		  #jineng {
+			height: 280px;
+			line-height: 280px;
+		  }
+     #zhangwo {
+     	height: 280px;
+    }
+     #zhangwo div p{
+    	width: 300px;
+    	height: 15px;
+      border:1px solid #000;
+    	margin-left: 100px;
+    	margin-top: 20px;
+    	text-align: center;
+    	border-radius: 8px;
+    }
+    #s1 {
+      width: 90%;
+    }
+    #s2 {
+      width: 80%;
+    }
+    #s3,#s5 {
+      width: 75%;
+    }
+    #s4 {
+      width: 80%;
+    }
+    #s6,#s7 {
+      width: 70%;
+    }
+     #zhangwo div span{
+      background:#000;
+      border-radius: 6px;
+      color: #fff;
+      float:left;
+      height:100%;
+      text-align:center;
+      line-height:15px;
+      font-size: 12px;
+    }
+     #zhangwo div em {
+    	display: inline-block;
+    	width: 100px;
+    	text-align: right;
+    	color: #000;
+    	line-height: 15px;
+    	float: left;
+    	font-weight: bold;
+    	font-style: normal;
+    }
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="header"><h1>个人简历</h1></div>
+		<div id="content">
+			<div id="left">
+  			<div id="box">
+  			  <div id="img"><img src="images/touxiang.jpg" alt=""></div>
+  			  <div id="txt">你站的高度，<br>决定你看的宽度！</div>
+  			</div>
+  			<div id="jiaoyu">
+  				教育背景
+  			</div>
+  			<div id="jineng">
+  				技能掌握
+  			</div>
+  			<div id="ziwo">
+  				自我评价
+  			</div>
+  		</div>
+  		<div id="right">
+  			<div id="jieshao">
+  				<p><img src="images/lianxiren.png" alt="xm">：曹晓川</p>
+  				<p><img src="images/sex.png" alt="se">：男</p>
+  				<p><img src="images/shengri.png" alt="m">：1998.01.26</p>
+  				<p><img src="images/home.png" alt="d">：河北邯郸</p>
+  				<p><img src="images/photo.png" alt="xm">：18713266977</p>
+  				<p><img src="images/qq.png" alt="xm">：254048085</p>
+  				<p><img src="images/weixin.png" alt="xm">：Mrxiao_chuan</p>
+  				<p id="wx"><img src="images/github (2).png" alt="xm">：github.com/xiaochuan6</p>
+  			</div>
+  			<div id="beijing">
+          <p id="f1"><span>入学时间：2015.09—2018.06 </span><br><span>所在学校：河北软件职业技术学院</span><br><span>所学专业：计算机信息管理(网页制作方向)</span></p>
+					<p id="f2">主修课程：<br>
+					基础平面设计、职业素质教育、计算机基础教程、WEB界面特效、MySQL数据库<br>面对对象程序设计、CMS快速建站(phpcms)、
+					开源框架技术(bootstrap)</p>
+				</div>
+  			</div>
+  			<div id="zhangwo">
+  				<div>
+						<em>HTML：</em><p><span id="s1">90%</span></p>
+					</div>
+					<div>
+						<em>CSS：</em><p><span id="s2">85%</span></p>
+					</div>
+					<div>
+						<em>JS：</em><p><span id="s3">75%</span></p>
+					</div>
+					<div>
+						<em>jQuery：</em><p><span id="s4">80%</span></p>
+					</div>
+					<div>
+						<em>CSS3：</em><p><span id="s5">75%</span></p>
+					</div>
+					<div>
+						<em>Bootstrap：</em><p><span id="s6">70%</span></p>
+					</div>
+					<div>
+						<em>PS：</em><p><span id="s7">70%</span></p>
+					</div>
+  			</div>
+  			<div id="pingjia"> 
+  				<p id="nr">本人有较强的社会责任感，对工作及学习具有强烈的积极性，列如：(专业老师布置的作业都是最先完成的)，接受新鲜事物能力强，热爱前端技术、喜欢制作网页，专业知识掌握不错，性格外向能尽快的融入一个集体中。</p>
+  			</div>
+		</div>
+	</div>
+</body>
+</html>
